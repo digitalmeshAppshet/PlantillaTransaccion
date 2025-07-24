@@ -1,0 +1,120 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Transacciones</title>
+		<link rel="stylesheet" href="https://digitalmeshappshet.github.io/PlantillaTransaccion/style.css">
+		<link rel="license" href="https://www.opensource.org/licenses/mit-license/">
+	</head>
+	<!--ENCABEZADO TITULO-->
+<body>
+	<header> 	<!--NOMBRE DE LA EMPRESA-->
+    	<h1><p>&lt;&lt;[Id_Empresa].[Nombre Comercial]&gt;&gt;</p></h1>
+	            <!--DATOS REPRESENTANTE LEGAL -->
+    	<table class="inventory">
+    		<tr>
+    		    <th rowspan="3" style="width: 10%; text-align: center">&lt;&lt;[Id_Empresa].[Logo]&gt;&gt;</th>
+    		    <td rowspan="3" style="width: 40%; text-align: center"><br>
+    		        &lt;&lt;[Id_Empresa].[Nombre Comercial]&gt;&gt;<br>
+    		        &lt;&lt;[Id_Empresa].[Razon Social]&gt;&gt;<br>
+    		        &lt;&lt;[Id_Empresa].[Direccion]&gt;&gt;<br>
+    		        &lt;&lt;[Id_Empresa].[Correo]&gt;&gt;<br>
+    		        &lt;&lt;[Id_Empresa].[Telefono]&gt;&gt;
+    		    </td>
+    		    <th style="width: 20%;">Fecha</th>
+    		    <td>&lt;&lt;[Fecha_Transaccion]&gt;&gt;</td>
+    		</tr>
+    		<tr>
+    		   <th>Estado</th>
+    		    <td>&lt;&lt;[Estado_Transaccion]&gt;&gt;</td>
+    		</tr>
+    		<tr>
+        	    <th>Elaborado por</th>
+    		    <td>&lt;&lt;[Vendedor_Transaccion]&gt;&gt;</td>
+    		</tr>
+    	</table>
+    	 </header>
+<!--DATOS CLIENTE O PROVEEDOR -->	
+	<h1>Datos - &lt;&lt;[AUX_TIPO_PERSONA]&gt;&gt;</h1>
+	<article>
+	    <table>
+			<tr>
+				<th style="text-align: left; font-weight: bold"><span>Razon social</span></th>
+    				<td style="width: 50%;"><span>&lt;&lt;[Razon Social]&gt;&gt;</span></td>
+    			<th style="text-align: left; font-weight: bold"><span>Correo</span></th>
+    				<td style="width: 20%;"><span>&lt;&lt;[Correo_Persona]&gt;&gt;</span></td>
+			</tr>
+			<tr>
+				<th style="text-align: left; font-weight: bold"><span>Direccion</span></th>
+			    	<td><span>&lt;&lt;[Direccion_Persona]&gt;&gt;</span></td>
+				<th style="text-align: left; font-weight: bold"><span>Teléfono</span></th>
+				    <td><span>&lt;&lt;[Telefono_Persona]&gt;&gt;</span></td>
+			</tr>
+	</table>
+	    <table>
+			<thead>
+				<tr>
+					<th style="text-align: center; font-weight: bold"><span>Orden</span></th>
+					<th style="width: 50%; text-align: center; font-weight: bold"><span>Descripcion</span></th>
+					<th style="text-align: center; font-weight: bold"><span>Valor</span></th>
+					<th style="text-align: center; font-weight: bold"><span>Cantidad</span></th>
+					<th style="text-align: center; font-weight: bold"><span>Total</span></th>
+				</tr>
+			</thead>
+	
+				<p><span>&lt;&lt;Start: Agregar Productos&gt;&gt;</span></p>
+					<tr>
+					    <td style="text-align: center;"><span>&lt;&lt;[Contador]&gt;&gt;</span></td>
+				        <td style="text-align: justify;"><span>&lt;&lt;[Id_Producto].[Descripcion Completa]&gt;&gt;</span></td>
+						<td style="text-align: center;"><span>&lt;&lt;[Costo_DetalleTransaccion]&gt;&gt;</span></td>
+						<td style="text-align: center;"><span>&lt;&lt;[Cantidad_DetalleTransaccion]&gt;&gt;</span></td>
+						<td style="text-align: center;"><span>&lt;&lt;[Total_DetalleTransaccion]&gt;&gt;</span></td>
+					</tr>
+				<p><span>&lt;&lt; end &gt;&gt;</span></p>
+		
+		</table>
+		<table>
+    		<tr>
+    		    <td rowspan="5" style="width: 70%; text-align: left">
+    		  <span>Notas adicionales:</span><Br>
+				<p>&lt;&lt;[Nota_Transaccion]&gt;&gt;</p>
+    		    </td>
+				<th><span>Subtotal</span></th>
+				<td><span>&lt;&lt;[SubTotal_Transaccion]&gt;&gt;</span></td>
+			</tr>
+			<tr>
+				<th><span>IVA</span></th>
+				<td style="text-align: center;"><span>&lt;&lt;[Iva_Transaccion]&gt;&gt;</span></td>
+			</tr>
+			    <th><span> % Descuento</span></th>
+					<td style="text-align: center;"><span>&lt;&lt;[Descuento_Transaccion]&gt;&gt;</span></td>
+			<tr>
+				<th><span>Abono</span></th>
+					<td style="text-align: center;"><span>&lt;&lt;[Abono_Transaccion]&gt;&gt;</span></td>
+			</tr>
+			<tr>
+	    		<th><span>Total a pagar</span></th>
+					<td style="text-align: center;"><span>&lt;&lt;[Total_Transaccion]&gt;&gt;</span></td>
+			</tr>
+		</table>
+	</article>
+</body>
+<style>
+.footer {
+    font: 16px/1 'Open Sans', sans-serif;
+    position: fixed;
+    left: 0;
+    bottom: 5;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+</style>
+
+<div class="footer">
+<p>La presente cotización tiene una vigencia de 15 (quince) días calendario a partir de la fecha de emisión.
+Los precios y la disponibilidad de productos están sujetos a cambios sin previo aviso, debido a factores externos y condiciones del mercado.
+
+Agradecemos sinceramente la confianza depositada en &lt;&lt;[Id_Empresa].[Nombre Comercial]&gt;&gt; al considerar nuestros productos y servicios.
+</p>
+    </div>
+</html>
