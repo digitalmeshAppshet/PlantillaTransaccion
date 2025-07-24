@@ -275,3 +275,13 @@ tr:hover .cut {
 .small-text {
     font-size: 60%;
 }
+
+.footer {
+    font: 16px/1 'Open Sans', sans-serif;
+    position: fixed;
+    left: 0;
+    bottom: 5;
+    width: 100%;
+    color: black;
+    text-align: Left;
+}
