@@ -33,11 +33,11 @@ span[contenteditable] {
 }
 
 h3 {
-    font: bold 100% sans-serif;
-    letter-spacing: 0.5em;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 0.5em; /* Añadido para espacio después del título */
+    background: #27649d;
+    border-radius: 0.25em;
+    color: #FFF;
+    margin: 0;
+    padding: 0.5em 0;
 }
 /* heading */
 h1 {
