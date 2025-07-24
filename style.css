@@ -294,4 +294,6 @@ h2 {
     padding: 0.5em 0.5em;
     margin-top:10px;
     width:100%;
+    height: AUTO;
+    position: fixed;
 }
