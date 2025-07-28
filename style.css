@@ -190,11 +190,11 @@ table.meta td {
 /* table items */
 table.inventory th {
     font-weight: bold;
-    text-align: center;
+    text-align: left;
 }
 
 table.inventory td {
-    text-align: right;
+    text-align: Center;
 }
 
 table { font-size: 75%; table-layout: fixed; width: 100%; }
