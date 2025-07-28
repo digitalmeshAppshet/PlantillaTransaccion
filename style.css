@@ -68,7 +68,7 @@ th, td {
 
 th {
     background: #EEE;
-    font: bold;
+    font-weight: bold;
 }
 
 /* page */
@@ -191,7 +191,6 @@ table.meta td {
 /* table items */
 table.inventory th {
     font-weight: bold;
-    font: bold;
     text-align: left;
 }
 
